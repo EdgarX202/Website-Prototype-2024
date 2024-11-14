@@ -9,7 +9,7 @@ upon. An administrator will be able to log on to the website and add or remove s
 
 Timeframe: **10/10/24 - 3/12/24** <br>
 <br>
-Refer to PART1 Design file to find all the details.<br>
-Refer to PART2 Implementation folder for the actual prototype of the website.<br>
+Refer to PART1 Design file to find all the details. (COMPLETE)<br>
+Refer to PART2 Implementation folder for the actual prototype of the website. (IN PROGRESS)<br>
 <br>
 Screenshots will be uploaded below once the website is finished.
