@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Character encoding for the document -->
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/adminPage.css">
+		<!-- JAVASCRIPT -->
+		<script src="js/sidebar.js"></script>
+		
+		<title>Admin Home</title>
+	</head> <!-- HEAD -->
+	
+	<body class="expanded">
+		<aside class="leftSideNav">
+			<nav class="topNav">
+				<header>Main Menu</header>
+				<ul>
+					<li>
+						<a href="#">
+							<span>Online Records</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Staff Zone</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Settings</span>
+						</a>
+					</li>
+					<li>
+						<form action="php/logout.php" method="post">
+							<input type="submit" value="LOGOUT" name="Logout">
+						</form>
+					</li>
+				</ul>
+			</nav> <!-- TOP NAV -->
+			
+			<nav class="midNav">
+				<header>Management</header>
+				<ul>
+					<li>
+						<a href="studentsDB.htm">
+							<span>Students</span>
+						</a>
+					</li>
+					<li>
+						<a href="subjectsDB.htm">
+							<span>Modules</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- MID NAV -->
+			
+			<nav class="botNav">
+				<header>Personal Menu</header>
+				<ul>
+					<li>
+						<a href="#">
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Notifications</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Messages</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- BOT NAV -->
+		</aside> <!-- ASIDE -->
+		
+		<aside class="rightSideNav">
+			<nav class="topNav">
+				<header>Calendar</header>
+				<div class="calendar">
+					<div class="month">December 2024</div>
+						
+				</div> <!-- CALENDAR -->
+			</nav> <!-- TOP NAV -->
+			
+			<nav class="midNav">
+				<header>Social</header>
+					<div class="outterSocialBox">
+						<div class="innerSocialBox">
+							<div class="profileInfo">
+								<div class="profilePic">
+								</div>
+							</div>
+							<div class="messageBox">
+							
+							</div>
+						</div>
+					</div>
+			</nav> <!-- MID NAV -->
+			
+			<nav class="botNavRight">
+				
+			</nav> <!-- BOT NAV RIGHT -->
+		</aside> <!-- ASIDE -->
+		
+		<div class="container">
+			<div id="top">
+				<div class="logoM">
+					<img src="images/logo.png" alt="University logo image">
+				</div> <!-- LOGO MIDDLE -->
+			</div> <!-- TOP -->
+			
+			<div id="middle">
+				<div class="toolsBox">
+					<p class="tools">Your Online Tools</p>
+					<div class="bgBox">
+						<table class="toolsTable">
+							<tr>
+								<th><a href="#">Webex</a></th>
+								<th><a href="#">Trello</a></th>
+								<th><a href="#">Teams</a></th>
+							</tr>
+						</table> <!-- TOOLS TABLE -->
+					</div> <!-- BG BOX -->
+				</div> <!-- TOOLS BOX -->
+			</div> <!-- MIDDLE -->
+			
+			<div id="bottom">
+				<div class="outterBox">
+					<div class="innerBox">
+						<div class="headerModule">Modules</div>
+						
+						<div class="flexModuleBox">
+							<div class="box1">
+								<div class="flexCont">
+									<table class="modHeader">
+										<tr>
+											<th></th>
+										</tr>
+									</table> <!-- MOD HEADER -->
+									<a href="javaMod.htm" class="modLink">Java Programming</a>
+								</div> <!-- FLEX CONT -->
+							</div> <!-- BOX1 -->
+							
+							<div class="box2">
+								<div class="flexCont">
+									<table class="modHeader">
+										<tr>
+											<th></th>
+										</tr>
+									</table> <!-- MOD HEADER -->
+									<a href="dataMod.htm" class="modLink">Database Development</a>
+								</div> <!-- FLEX CONT -->
+							</div> <!-- BOX2 -->
+							
+							<div class="box3">
+								<div class="flexCont">
+									<table class="modHeader">
+										<tr>
+											<th></th>
+										</tr>
+									</table> <!-- MOD HEADER -->
+									<a href="webDevMod.htm" class="modLink">Web Development</a>
+								</div> <!-- FLEX CONT -->
+							</div> <!-- BOX3 -->
+						</div> <!-- FLEX MODULE BOX -->
+					</div> <!-- INNER BOX -->
+					
+						<div class="activitiesBox">
+							<div class="headerModule">Online Activities</div>
+							<div class="activitiesFlexBox">
+								<div class="activityItem">
+									<div style="flex-grow: 1">
+										<div class="headerOnlineActBox">Activity 1</div>
+									</div>
+									<div style="flex-grow: 2">
+										<div class="headerOnlineActBox">Activity 2</div>
+									</div>
+									<div style="align-self: center">
+										<div class="headerOnlineActBox">Activity 3</div>
+									</div>
+									<div style="flex-grow: 4">
+										<div class="headerOnlineActBox">Activity 4</div>
+									</div>
+								</div>
+								<div class="activityItem">
+									<div style="flex-grow: 3">
+										<div class="headerOnlineActBox">Activity 5</div>
+									</div>
+									<div style="flex-grow: 1">
+										<div class="headerOnlineActBox">Activity 6</div>
+									</div>
+									<div style="flex-grow: 4">
+										<div class="headerOnlineActBox">Activity 7</div>
+									</div>
+									<div style="flex-grow: 2">
+										<div class="headerOnlineActBox">Activity 8</div>
+									</div>
+								</div>
+							</div> <!-- ACTIVITIES FLEX BOX -->
+						</div> <!-- ACTIVITIES BOX -->
+				</div> <!-- OUTTER BOX -->
+			</div> <!-- BOTTOM -->
+		</div> <!-- CONTAINER -->
+	</body> <!-- BODY -->
+</html> <!-- HTML -->

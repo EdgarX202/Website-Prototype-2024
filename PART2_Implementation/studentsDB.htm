@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Character encoding for the document -->
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/studentDB.css">
+		
+		<title>Student Database</title>
+	</head> <!-- HEAD -->
+	
+	<body class="expanded">
+		<aside class="leftSideNav">
+			<nav class="topNav">
+				<header>Main Menu</header>
+				<ul>
+					<li>
+						<a href="#">
+							<span>Settings</span>
+						</a>
+					</li>
+					<li>
+						<a href="adminHome.htm">	
+							<span>Exit Database</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- TOP NAV -->
+			
+			<nav class="midNav">
+				<header>Management</header>
+				<ul>
+					<li>
+						<a href="#">
+							<span id="btnAdd">Add New</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Edit Details</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Remove Student</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- MID NAV -->
+			
+			<div id="myModal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<header class="modalHeader">Add new student record</header>
+					<form name="newForm" action="php/connect.php" onsubmit="return formValidation()" method="post">
+						<header class="inputHeader">ID</header>
+						<input class="newInput" type="text" id="username" name="Username" placeholder="40354785...">
+						<span id="usernameError" class="error-message"></span>
+						<header class="inputHeader">Password</header>
+						<input class="newInput" type="text" id="password" name="Password" placeholder="Might be hashed...">
+						<span id="passwordError" class="error-message"></span>
+						<header class="inputHeader">First Name</header>
+						<input class="newInput" type="text" id="firstName" name="FirstName" placeholder="John...">
+						<span id="fNameError" class="error-message"></span>
+						<header class="inputHeader">Last Name</header>
+						<input class="newInput" type="text" id="lastName" name="LastName" placeholder="Wick...">
+						<span id="lNameError" class="error-message"></span>
+						<header class="inputHeader">Phone Number</header>
+						<input class="newInput" type="text" id="number" name="Number" placeholder="08535356745...">
+						<span id="numberError" class="error-message"></span>
+						<header class="inputHeader">Address</header>
+						<input class="newInput" type="text" id="address" name="Address" placeholder="5 crescent, England, EH2 5JK...">
+						<span id="addressError" class="error-message"></span>
+
+						<input type="submit" value="ADD" name="SubmitNewStud"/>
+						<button class="clearSub" type="reset">Clear</button>
+					</form> <!-- FORM -->
+					
+					<!-- JAVASCRIPT -->
+					<script src="js/form_validation.js"></script>
+
+				  </div> <!-- MODAL CONTENT -->
+			</div> <!-- MODAL -->
+			
+			<nav class="botNav">
+				<div class="searchBox">
+					<form name="searchForm" action="php/connect.php" method="post">
+						<div class="searchHeader"><b>Student ID</b></div>
+						<input class="idSearch" type="text" id="searchId" name="SearchId" placeholder="40318536...">
+						
+						<input type="submit" value="SEARCH" name="Search"/>
+						<button type="reset">Clear</button>
+					</form>
+				</div> <!-- SEARCH BOX -->
+			</nav> <!-- BOT NAV -->
+		</aside> <!-- ASIDE -->
+		
+		<div class="container">
+			<div id="top">
+				<div class="logoM">
+					<img src="images/logo.png" alt="University logo image">
+				</div> <!-- LOGO MIDDLE -->
+			</div> <!-- TOP -->
+			
+			<div id="bottom">
+				<div class="outterBox">
+					<div class="innerBox">
+						<header class="headerDB">Student Database</header>
+							<div class="information">
+
+								<?php include 'php/getStudents.php';?> <!-- NOT SURE DOESNT WORK? -->
+							
+							</div>
+						<div class="flexDBBox">
+							<div class="info">
+								
+						</div> <!-- FLEX MODULE BOX -->
+					</div> <!-- INNER BOX -->
+				</div> <!-- OUTTER BOX -->
+			</div> <!-- BOTTOM -->
+		</div> <!-- CONTAINER -->
+		
+		<!-- JAVASCRIPT -->
+		<script src="js/sidebar.js"></script>
+		<script src="js/modal.js"></script>
+	</body> <!-- BODY -->
+</html> <!-- HTML -->

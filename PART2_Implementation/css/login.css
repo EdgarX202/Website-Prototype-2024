@@ -1,0 +1,104 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 97.5vh;
+}
+
+.topColour {
+	height: 40vh; /* vh - viewport height */
+	width: 99.5%;
+	background: linear-gradient(180deg, rgba(23,72,91,1) 0%, rgba(125,135,157,1) 69%, rgba(216,191,216,1) 100%);
+	border-bottom: 5px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	box-shadow: 0px 2px 4px black;
+}
+
+.bottomColour {
+	height: 40vh;
+	width: 99.5%;
+	position: absolute;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(216,191,216,1) 0%, rgba(23,72,91,1) 73%);
+	box-shadow: 0px -2px 4px black;
+}
+
+#login {
+	width: 400px;
+	height: 350px;
+	border: 3px solid black;
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(80,26,37,0.6234826694349616) 100%);
+	border-radius: 30px;
+	box-shadow: 3px 3px 3px black;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 50;
+}
+
+form {
+	width:90%;
+	margin-left: 18px;
+	margin-top: 40px;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.error-message {
+	color: red;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	background-color: #54A4BD;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+input[type=submit]:hover {
+	background-color: #428397;
+}
+
+.formContainer {
+	padding: 16px;
+	text-align: center;
+	background-color: snow;
+	border-radius: 20px;
+}
+
+.line {
+	background: linear-gradient(90deg, rgba(240,255,255,0) 0%, rgba(106,201,201,1) 50%, rgba(240,255,255,0) 100%);
+	width: 100%;
+	height: 15px;
+	position: relative;
+	margin-top: 337px;
+	z-index: -1;
+	border-radius: 10px;
+}
+
+img {
+	width: 25%;
+	padding-left: 38%;
+	padding-top: 20px;
+}

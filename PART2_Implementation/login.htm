@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Character encoding for the document -->
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/login.css">
+		
+		<title>User Login</title>
+	</head> <!-- HEAD -->
+	
+	<body>	
+		<div class="container">
+			<div id="top">
+				<div class="topColour">
+					<img src="images/logo.png" alt="Logo">
+				</div> <!-- TOP COLOUR -->
+			</div>
+			
+			<div class="line">
+			</div> <!-- LINE -->
+			
+			<div id="login">
+				<!-- FORM -->
+				<form name="loginForm" action="php/connect.php" onsubmit="return formValidation()" method="post">
+					<div class="formContainer">
+						<!-- Username -->
+						<label for="username"><b>Student/Staff ID</b></label>
+						<input type="text" id="username" name="Username" placeholder="Enter your ID">
+						<span id="usernameError" class="error-message"></span>
+						<!-- Password -->
+						<label for="password"><b>Password</b></label>
+						<input type="password" id="password" name="Password" placeholder="Enter your password">
+						<span id="passwordError" class="error-message"></span>
+						<!-- Button -->
+						<input type="submit" value="LOGIN" name="SubmitLogin"/>
+						<span class="psw"><a href="#">Forgot?</a></span>
+					</div> <!-- FORM CONTAINER -->
+				</form>
+				
+				<script src="js/form_validation.js"></script>
+			</div> <!-- LOGIN -->
+			
+			<div id="bottom">
+				<div class="bottomColour">
+					
+				</div> <!-- BOTTOM COLOUR -->
+			</div> <!-- BOTTOM -->
+		</div> <!-- CONTAINER -->
+	</body> <!-- BODY -->
+</html> <!-- HTML -->

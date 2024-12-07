@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Character encoding for the document -->
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/modulesDB.css">
+		
+		
+		<title>Module Enrolment</title>
+	</head> <!-- HEAD -->
+	
+	<body class="expanded">
+		<aside class="leftSideNav">
+			<nav class="topNav">
+				<header>Main Menu</header>
+				<ul>
+					<li>
+						<a href="adminHome.htm">	
+							<span>Homepage</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Settings</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- TOP NAV -->
+			
+			<nav class="midNav">
+				<header>Management</header>
+				<ul>
+					<li>
+						<a href="#">
+							<span id="btnAdd">Enrol</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Edit Details</span>
+						</a>
+					</li>
+				</ul>
+			</nav> <!-- MID NAV -->
+			
+			<div id="myModal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<header class="modalHeader">Search</header>
+					<form action="#phpPage">
+						<header class="inputHeader">ID</header>
+						<input class="newInput" type="text" placeholder="40354785...">
+						<header class="inputHeader">First Name</header>
+						<input class="newInput" type="text" placeholder="John...">
+						<header class="inputHeader">Last Name</header>
+						<input class="newInput" type="text" placeholder="Wick...">
+						
+						<header class="modalHeader">Enrol</header>
+						<header class="inputHeader">Module ID</header>
+						<input class="newInput" type="text" placeholder="CS11111...">
+						<header class="inputHeader">Module Name</header>
+						<input class="newInput" type="text" placeholder="Web Dev...">
+						
+						<button class="searchSub" type="submit">Search</button>
+						<button class="addSub" type="submit">Add</button>
+						<button class="clearSub" type="reset">Clear</button>
+					</form> <!-- FORM -->
+				  </div> <!-- MODAL CONTENT -->
+			</div> <!-- MODAL -->
+			
+			<nav class="botNav">
+				<div class="searchBox">
+					<form action="#phpPage">
+						<div class="searchHeader"><b>Module ID</b></div>
+						<input class="nameSearch" type="text" placeholder="CS11111...">
+						
+						<button type="submit">Search</button>
+						<button type="reset">Clear</button>
+					</form>
+				</div>
+				
+			</nav> <!-- BOT NAV -->
+		</aside> <!-- ASIDE -->
+		
+		<div class="container">
+			<div id="top">
+				<div class="logoM">
+					<img src="images/logo.png" alt="University logo image">
+				</div> <!-- LOGO MIDDLE -->
+			</div> <!-- TOP -->
+			
+			<div id="bottom">
+				<div class="outterBox">
+					<div class="innerBox">
+						<header class="headerDB">Modules</header>
+						
+						<div class="flexDBBox">
+							<div class="info">
+								
+							</div> <!-- FLEX MODULE BOX -->
+						</div> <!-- INNER BOX -->
+					</div>
+					
+					<div class="innerBox2">
+						<header class="headerDB">Students</header>
+					</div>
+				</div> <!-- OUTTER BOX -->
+			</div> <!-- BOTTOM -->
+		</div> <!-- CONTAINER -->
+		
+		<!-- JAVASCRIPT -->
+		<script src="js/sidebar.js"></script>
+		<script src="js/modal.js"></script>
+	</body> <!-- BODY -->
+</html> <!-- HTML -->
